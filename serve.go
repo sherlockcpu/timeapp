@@ -12,5 +12,5 @@ func main() {
 	e.GET("/", func(c echo.Context) error {
 		return c.String(http.StatusOK, "Current date and time is: "+time.Now().String())
 	})
-	e.Logger.Fatal(e.Start(":80"))
+	e.Logger.Fatal(e.Start(":8080"))
 }
